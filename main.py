@@ -3,7 +3,7 @@
 
 import random
 import telebot
-from telebot import util
+from telebot import types, util
 from telebot.apihelper import ApiTelegramException
 import time
 import asyncio
