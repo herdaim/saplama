@@ -4,3 +4,4 @@ ujson==5.1.0
 aiohttp
 matplotlib
 telebot==0.0.4
+telebot.types
