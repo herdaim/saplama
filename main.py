@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import random
 import telebot
-from telebot import types, util
+from telebot import TeleBot, types, util
 from telebot.apihelper import ApiTelegramException
 import time
 import asyncio
