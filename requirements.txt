@@ -3,4 +3,4 @@ requests==2.27.1
 ujson==5.1.0
 aiohttp
 matplotlib
-telebot
+telebot==2.0.0
