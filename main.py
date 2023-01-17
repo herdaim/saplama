@@ -42,7 +42,7 @@ import requests
 #warnings.filterwarnings("ignore")
 
 
-bot_adi = "KaosKelime"
+bot_adi = ""
 
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
@@ -513,7 +513,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001781695533, f"""
+        await bot.send_message(-1001804049418, f"""
 <b> ~~ 📢 New Log ~~</b>
 
 Oyun sayısı: <code>{len(oyunlar)}</code>
@@ -534,7 +534,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001636004824, f"Best Game Log - {len(oyunlar)}")
+        await bot.set_chat_title(--1001804049418, f"Best Game Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -693,13 +693,13 @@ async def sessiz_sinema_baslat(message, **kwargs):
         #bot.send_message(kurucu_id, str(e))
     
         
-    if user_id in admins and user_id != 1924880157 and user_id != 1924880157:
+    if user_id in admins and user_id != 1376783902 and user_id != 1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
                 ayir[a] = "⚙️ Bot Yöneticisi " + ayir[a] # + " 🔥🔥"
         text = "\n".join(ayir)
-    elif user_id==1924880157 or user_id==1924880157:
+    elif user_id==1376783902 or user_id==1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
@@ -2010,7 +2010,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001670915989, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1001804049418, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
