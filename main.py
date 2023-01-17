@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from telebot import telebot
 import random
 from telebot import types, util
 from telebot.apihelper import ApiTelegramException
