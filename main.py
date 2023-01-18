@@ -573,8 +573,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/BestGameeBot?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/bestmusicdestek")
+            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/KaosKelime_bot?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/ChatKaos")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>Best</b> oyun botuna hoş geldin.\n\nBen bir oyun botuyum.🎮\n\nÇeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin 🎉\n\nBenimle oynamak için beni bir gruba eklemen lazım.',  reply_markup=keyboard)
@@ -690,13 +690,13 @@ async def sessiz_sinema_baslat(message, **kwargs):
         #bot.send_message(kurucu_id, str(e))
     
         
-    if user_id in admins and user_id != 1924880157 and user_id != 1924880157:
+    if user_id in admins and user_id != 1376783902 and 1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
                 ayir[a] = "⚙️ Bot Yöneticisi " + ayir[a] # + " 🔥🔥"
         text = "\n".join(ayir)
-    elif user_id==1924880157 or user_id==1924880157:
+    elif user_id==1376783902 or user_id==1376783902:
         ayir = text.split("\n")
         for a in range(len(ayir)):
             if first_name in ayir[a]:
@@ -1076,7 +1076,7 @@ def oban(message):
                 bot.send_message(chat_id, f"🗡🩸 {message.reply_to_message.from_user.first_name} ({alintilanan_user_id}) artık yasaklı", reply_markup=keyboard, reply_to_message_id=message.id)
                 try:
                     if alintilanan_user_id == chat_id:
-                        bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @jackdanielssx")
+                        bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @Merdoobeyims")
                         bot.leave_chat(chat_id)
                 except Exception as e:
                     print("sadsadsad",e,chat_id)
@@ -1274,7 +1274,7 @@ async def baslat(message):
 
 
     if sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{chat_id}'") != []:
-        await bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @jackdanielssx")
+        await bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @Merdoobeyims")
         await bot.leave_chat(chat_id)
         return
     elif sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{user_id}'") != []:
@@ -1969,11 +1969,11 @@ async def callback_inline(cagri): #çağrıcı cagrici
     
 
     if sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{chat_id}'") != []:
-        await bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @OctopusGameSahip")
+        await bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @Merdoobeyims")
         await bot.leave_chat(chat_id)
         return
     elif sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{user_id}'") != []:
-        await bot.answer_callback_query(cagri.id, '⚠️ Bottan engellendiniz. İtiraz etmek istiyorsanız: @OctopusGameSahip', show_alert=True)
+        await bot.answer_callback_query(cagri.id, '⚠️ Bottan engellendiniz. İtiraz etmek istiyorsanız: @Merdoobeyims', show_alert=True)
         return
 
     sorgu = cagri.data
@@ -1982,7 +1982,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
     if not await is_subscribed(chat_id, user_id):
         # user is not subscribed. send message to the user
         await bot.answer_callback_query(cagri.id, '⛱ Lütfen gruba giriniz.')
-        #bot.send_message(kurucu_id, "Gereksiz değil. 11223344")
+        #bot.send_message(kurucu_id, "Gereksiz değil. 1376783902")
         return
 
     first_name = None
@@ -2007,7 +2007,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001670915989, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1001804049418, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
@@ -2529,7 +2529,7 @@ def haftalik_grup(message):
 
 /rating - Sıralamayı Gösterir
 
-🙏 Yardım ve sorularınız için: @bestmusicdestek""", parse_mode='html')
+🙏 Yardım ve sorularınız için: @Merdoobeyims""", parse_mode='html')
 
 
 @bot.message_handler(commands=['rules'])
@@ -2576,7 +2576,7 @@ async def messages(mesaj):
 
 
     if sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{chat_id}'") != []:
-        bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @OctopusGameSahip")
+        bot.send_message(chat_id, "⚠️ Grup bot tarafından engellenmiştir. İtiraz etmek istiyorsanız: @Merdoobeyims")
         bot.leave_chat(chat_id)
         return
     elif sql_get(f"SELECT * FROM ban_listesi WHERE id LIKE '{user_id}'") != []:
@@ -3330,7 +3330,7 @@ async def periyodik_kontrol():
 
 
 async def main():
-    print((datetime.datetime.now() + datetime.timedelta(hours=3)).strftime("%H:%M:%S")+" Octopus bot başladı!")
+    print((datetime.datetime.now() + datetime.timedelta(hours=3)).strftime("%H:%M:%S")+" KaosBot bot başladı!")
     await asyncio.gather(bot.infinity_polling(), periyodik_kontrol())
 
 
