@@ -44,19 +44,19 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "B13 KURTULUS"
-    bot_token = "5576373028:AAHr5iPEQ1yXTBTc0kAu9pbLo6Uf4X9sNb4"
+    bot_adi = "  "
+    bot_token = " "
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "B13 KURTULUS"
-    bot_token = "5576373028:AAHr5iPEQ1yXTBTc0kAu9pbLo6Uf4X9sNb4"
+    bot_adi = " "
+    bot_token = "  "
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 6207007115
+kurucu_id = 
 
 admins = [kurucu_id, 6207007115]
 
