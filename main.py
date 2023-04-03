@@ -44,13 +44,13 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "  "
-    bot_token = " "
+    bot_adi = "Kaosgame"
+    bot_token = "6106932879:AAHHtWHW8hDz3fwdZYVA8ZkvpcpgxL-K29I"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = " "
-    bot_token = "  "
+    bot_adi = "Kaosgame"
+    bot_token = "6106932879:AAHHtWHW8hDz3fwdZYVA8ZkvpcpgxL-K29I"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
@@ -510,7 +510,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(--1001827910417, f"""
+        await bot.send_message(-978592234, f"""
 <b> ~~ 📢 New Log ~~</b>
 
 Oyun sayısı: <code>{len(oyunlar)}</code>
@@ -531,7 +531,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-100847676486, f"Best Game Log - {len(oyunlar)}")
+        await bot.set_chat_title(--978592234, f"Best Game Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -573,8 +573,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/B13 KURTULUSt?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/merdoobeyimskanal")
+            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/KelimeKulturOyunt?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/KelimeKulturOyun")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>Best</b> oyun botuna hoş geldin.\n\nBen bir oyun botuyum.🎮\n\nÇeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin 🎉\n\nBenimle oynamak için beni bir gruba eklemen lazım.',  reply_markup=keyboard)
@@ -2007,7 +2007,7 @@ async def callback_inline(cagri): #çağrıcı cagrici
         grup_username = grup_username.replace("'","")
 
         if f(f"groups.{chat_id}.username") == "":
-            await bot.send_message(-1001804049418, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
+            await bot.send_message(-1001773883866, f"🐙 {grup_username} ⟶ {len(f('groups')) + 1}")
             
         f(f"groups.{chat_id}.username", grup_username) 
         f(f"groups.{chat_id}.son_oyun_aktivitesi", time.time())
