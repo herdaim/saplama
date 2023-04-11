@@ -44,13 +44,13 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "Kaosgame"
-    bot_token = "6106932879:AAHHtWHW8hDz3fwdZYVA8ZkvpcpgxL-K29I"
+    bot_adi = "Sohbet Sarayı"
+    bot_token = "6175202878:AAGVML55Loof0LXciuLO5QXo6g14C6ETxAI"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "Kaosgame"
-    bot_token = "6106932879:AAHHtWHW8hDz3fwdZYVA8ZkvpcpgxL-K29I"
+    bot_adi = "Sohbet Sarayı"
+    bot_token = "6175202878:AAGVML55Loof0LXciuLO5QXo6g14C6ETxAI"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
@@ -58,7 +58,7 @@ temp = {}
 
 kurucu_id = 
 
-admins = [kurucu_id, 6207007115]
+admins = [kurucu_id, 5642704138]
 
 zaman_hassasiyeti = pow(10,6)
 
@@ -531,7 +531,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(--978592234, f"Best Game Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001943983208, f"Best Game Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -573,8 +573,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/KelimeKulturOyunt?startgroup=a")
-            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/KelimeKulturOyun")
+            callback_button = types.InlineKeyboardButton(text="Botu grubuna ekle 👪", url="https://t.me/Sohbet_Sarayıt?startgroup=a")
+            callback_button2 = types.InlineKeyboardButton(text="Destek ve İletişim ⚙️", url="https://t.me/Sohbet_Sarayı")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>Best</b> oyun botuna hoş geldin.\n\nBen bir oyun botuyum.🎮\n\nÇeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin 🎉\n\nBenimle oynamak için beni bir gruba eklemen lazım.',  reply_markup=keyboard)
